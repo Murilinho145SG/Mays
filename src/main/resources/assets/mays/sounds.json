@@ -1,0 +1,11 @@
+{
+  "try_trip": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "mays:try_trip",
+        "stream": true
+      }
+    ]
+  }
+}

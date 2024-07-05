@@ -1,0 +1,25 @@
+{
+  "tags": {
+    "forge:ingots/iron": "Fe",
+    "forge:ingots/copper": "Cu",
+    "forge:ingots/gold": "Au",
+    "forge:gems/lapis": "(Na,Ca)₈(AlSiO₄)₆(S,SO₄,Cl)₂",
+    "forge:gems/diamond": "C",
+    "forge:gems/emerald": "Be₃Al₂(SiO₃)₆",
+    "forge:gems/amethyst": "SiO₂",
+    "forge:gems/quartz": "SiO₂"
+  },
+  "item": {
+    "minecraft:blaze_powder": "MgSiO₃",
+    "minecraft:blaze_rod": "MgSiO₃",
+    "minecraft:clay_ball": "(Al₂O₃)(2SiO₂)(2H₂O)",
+    "minecraft:coal": "C",
+    "minecraft:charcoal": "C",
+    "minecraft:melon_slice": "C₆H₁₂O₆",
+    "minecraft:netherite_ingot": "Au₈Pd₁₀",
+    "minecraft:netherite_scrap": "Au₈Pd₁₀",
+    "minecraft:paper": "C₆H₁₀O₅",
+    "minecraft:redstone": "Fe₃O₄",
+    "minecraft:sugar": "C₁₂H₂₂O₁₁"
+  }
+}
