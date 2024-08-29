@@ -2,11 +2,13 @@ package com.mays.registries;
 
 import com.mays.Mays;
 import com.mays.impl.containers.CrateContainer;
+import com.mays.impl.containers.EnderChestContainer;
 import com.mays.impl.containers.LatexExtractorContainer;
 import com.mays.impl.containers.bags.BackpackContainer;
 import com.mays.impl.containers.bags.BagContainer;
 import com.mays.impl.containers.bags.PocketContainer;
 import com.mays.impl.entities.CrateBlockEntity;
+import com.mays.impl.entities.EnderChestEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -32,6 +34,15 @@ public class ContainerRegistry {
         BlockEntity blockEntity = level.getBlockEntity(pos);
         if (blockEntity instanceof CrateBlockEntity) {
             return new CrateContainer(id, inv, (CrateBlockEntity) blockEntity);
+        }
+        return null;
+    }));
+    public static final RegistryObject<MenuType<EnderChestContainer>> ENDER_CHEST = CONTAINERS.register("ender_chest", () -> IForgeMenuType.create((id, inv, data) -> {
+        BlockPos pos = data.readBlockPos();
+        Level level = inv.player.level();
+        BlockEntity blockEntity = level.getBlockEntity(pos);
+        if (blockEntity instanceof EnderChestEntity) {
+            return new EnderChestContainer(id, inv, (EnderChestEntity) blockEntity);
         }
         return null;
     }));

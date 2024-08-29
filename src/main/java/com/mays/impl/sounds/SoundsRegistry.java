@@ -10,4 +10,5 @@ import net.minecraftforge.registries.RegistryObject;
 public class SoundsRegistry {
     public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Mays.MODID);
     public static final RegistryObject<SoundEvent> TRY_TRIP = REGISTRY.register("try_trip", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Mays.MODID, "try_trip")));
+    public static final RegistryObject<SoundEvent> NOKIA = REGISTRY.register("nokia", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Mays.MODID, "nokia")));
 }

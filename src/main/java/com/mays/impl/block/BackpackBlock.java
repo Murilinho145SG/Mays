@@ -92,10 +92,10 @@ public class BackpackBlock extends CurrentBlockEntity {
         super.playerWillDestroy(level, pos, state, player);
     }
 
-    @Override
-    public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
-        return SHAPE;
-    }
+//    @Override
+//    public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
+//        return SHAPE;
+//    }
 
     private VoxelShape makeShape() {
         VoxelShape shape = Shapes.empty();

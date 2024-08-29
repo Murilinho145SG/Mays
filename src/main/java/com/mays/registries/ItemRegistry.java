@@ -4,6 +4,7 @@ import com.mays.Mays;
 import com.mays.impl.item.BackpackItem;
 import com.mays.impl.item.BagItem;
 import com.mays.impl.item.PocketItem;
+import com.mays.impl.item.UniversalWrench;
 import com.mays.impl.sounds.SoundsRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,7 +24,8 @@ public class ItemRegistry {
     public static final RegistryObject<BackpackItem> BACKPACK = REGISTER.register("backpack", BackpackItem::new);
     public static final RegistryObject<RecordItem> TRY_TRIP = REGISTER.register("music_disc_try_trip", () -> new RecordItem(15, SoundsRegistry.TRY_TRIP, new Item.Properties().rarity(Rarity.RARE).stacksTo(1), 259 * 20));
     public static final RegistryObject<Item> HAMMER = REGISTER.register("hammer", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SCREWDRIVER = REGISTER.register("screwdriver", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SCREWDRIVER = REGISTER.register("screwdriver", () -> new UniversalWrench(new Item.Properties()));
+    public static final RegistryObject<Item> ENDER_CHEST_ITEM = REGISTER.register("ender_chest", () -> new BlockItem(BlockRegistry.ENDER_CHEST.get(), new Item.Properties()));
 
     public static Collection<RegistryObject<Item>> getEntry() {
         return REGISTER.getEntries();

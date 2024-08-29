@@ -1,5 +1,6 @@
 package com.mays;
 
+import com.mays.impl.screens.EnderChestScreen;
 import com.mays.registries.BlockRegistry;
 import com.mays.registries.ContainerRegistry;
 import com.mays.registries.BlockEntitiesRegistry;
@@ -57,6 +58,7 @@ public class Mays {
         MenuScreens.register(ContainerRegistry.BACKPACK.get(), BackpackScreen::new);
         MenuScreens.register(ContainerRegistry.POCKET.get(), PocketScreen::new);
         MenuScreens.register(ContainerRegistry.CRATE.get(), CrateScreen::new);
+        MenuScreens.register(ContainerRegistry.ENDER_CHEST.get(), EnderChestScreen::new);
     }
 
     @SubscribeEvent
